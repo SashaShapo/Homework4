@@ -1,0 +1,71 @@
+body{
+    box-sizing: border-box;
+}
+main{
+    max-width: 1200px;
+}
+.cube-road{
+    min-height: 100vh;
+    position: relative;
+}
+.cube{
+    width: 300px;
+    height: 300px;
+    background-image: url("../hw4/image/road.jpg");
+    border: 3px double #fffb13;
+    position: absolute;
+    margin: 150px;
+}
+.cube-1 {
+    background-position:50% 50%;
+    background-size: 175%;
+    z-index: 5;
+    transition:.6s;
+}
+
+.cube-1:hover {
+    transform: scale(0.7);
+
+}
+
+.cube-2 {
+    transform: rotate(22deg);
+    z-index: 4;
+    border: 3px double #fffb13;
+    opacity: .46;
+}
+
+.cube-2:hover {
+    transform: rotate(15deg);
+}
+
+.cube-3 {
+    transform: rotate(44deg);
+    z-index: 3;
+    border: 3px double #fffb13;
+    opacity: .56;
+}
+
+.cube-3:hover {
+    transform: rotate(36deg);
+}
+
+.cube-4 {
+    transform: rotate(66deg);
+    z-index: 2;
+    border: 3px double #fffb13;
+    opacity: .66;
+}
+
+.cube-4:hover {
+    transform: rotate(59deg);
+
+}
+
+.rotate {
+    background-position:50% 50%;
+    background-size: 175%;
+    transition: transform .8s ease-in-out;
+}
+
+
